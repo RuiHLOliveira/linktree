@@ -234,7 +234,10 @@
             let elements = '';
             elements += '<h2>Últimos Posts</h2><br>';
             
-            listaPosts.forEach(post => {
+            const limite = 3;
+            for (let i = 0; i < limite; i++)
+            {
+                post = listaPosts[i];
                 post.link = `./${post.link}.html`
                 elements += `<a href="${post.link}">`;
                 elements += `<div class='post'>`;
@@ -243,8 +246,7 @@
                 elements += `<div class="post-date">${formatDate(post.date)}</div>`;
                 elements += `</div>`;
                 elements += `</a>`;
-            });
-            
+            }
             postsContainer.innerHTML = elements;
         }
 

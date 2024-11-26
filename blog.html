@@ -191,6 +191,7 @@
             elements += '<h2>Últimos Posts</h2><br>';
             
             listaPosts.forEach(post => {
+                if(post.link == null) return;
                 post.link = `./${post.link}.html`
                 elements += `<a href="${post.link}">`;
                 elements += `<div class='post'>`;
