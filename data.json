@@ -1,0 +1,36 @@
+{
+    "nome": "Rui Dev",
+    "descricao": "Rui Leite | Engenheiro de Software",
+    "links": [
+        {
+            "nome": "Instagram",
+            "link": "https://www.instagram.com/dev.rui/reels/"
+        },
+        {
+            "nome": "Blog",
+            "link": "/blog.html"
+        }
+    ],
+    "posts": [
+        {
+            "title": "Post A",
+            "excerpt": "Descubra as melhores técnicas para organizar seu tempo e aumentar sua produtividade no trabalho.",
+            "date": "2024-03-20"
+        },
+        {
+            "title": "Post B",
+            "excerpt": "As principais tecnologias e frameworks que estão dominando o mercado em 2024.",
+            "date": "2024-03-15"
+        },
+        {
+            "title": "Post C",
+            "excerpt": "Aprenda a criar um ambiente de trabalho produtivo e confortável em casa.",
+            "date": "2024-03-10"
+        },
+        {
+            "title": "Post D",
+            "excerpt": "Aprenda a criar um ambiente de trabalho produtivo e confortável em casa.",
+            "date": "2024-03-10"
+        }
+    ]
+}
