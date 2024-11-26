@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="./favicon.jpg">
     <title>Rui Dev Link List</title>
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark-dimmed.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
     <style>
         * {
             margin: 0;
@@ -106,9 +108,6 @@
             text-align: left;
             transition: background-color 0.3s ease;
         }
-        .post:hover {
-            background-color: #444444;
-        }
 
         .post-title {
             font-weight: bold;
@@ -148,6 +147,8 @@
         .view-all-posts:hover {
             background-color: #555555;
         }
+
+
     </style>
     
     
@@ -160,40 +161,111 @@
             <p id="descricao"></p>
         </div>
 
+        <div id="linksContainer" class="links">
+        </div>
+
+        <div class="post">
+            <h1 id="postTitle" class="post-title"></h1>
+            <h3 id="postSubtitle" class="post-subtitle"></h3>
+            <br>
+<pre><code class="language-c" id="code1">
+#include <stdio.h>
+#include <Windows.h>
+int main (void)
+{
+    float valor;
+    int conta;
+    float saldo = 20;
+    float chequeEspecial = 100;
+    int opcao = 1;
+    int i;
+    float listaClientes[10];
+    listaClientes[0] = 100;
+    listaClientes[1] = 500;
+    listaClientes[2] = 1000;
+    listaClientes[3] = 450;
+    listaClientes[4] = 600;
+
+    while (opcao > 0)
+    {
+        // menu
+        printf("\n\n***** CAIXA ELETRONICO *****");
+        printf("\n* Escolha uma opcao:");
+        printf("\n* 1-Saque");
+        printf("\n* 2-Deposito");
+        printf("\n* 0-Desligar");
+        printf("\n* Digite => ");
+        scanf("%d", &opcao);
+
+        if(opcao > 2){
+            printf("\nOpção não suportada!");
+        } else if(opcao == 2) {
+            printf("\nEstamos trabalhando na funcionalidade de deposito, aguarde!");
+        } else if(opcao == 1) {
+            //funcionalidade de saque
+            printf("\nInforme sua conta (1-10)...\n");
+            scanf("%d", &conta);
+            printf("\nSaldo atual da sua conta:");
+            printf("%.2f\n", listaClientes[conta]);
+            printf("\nInforme o valor do saque...\n");
+            scanf("%f", &valor);
+            printf("Processando...\n");
+            for ( i = 5; i >= 1 ; i--) {
+                printf("%d...", i);
+                sleep(1);
+            }
+            if (valor <= listaClientes[conta]) {
+                listaClientes[conta] = listaClientes[conta] - valor;
+                printf("Saque realizado.\n");
+                printf("Saldo: %.2f\n", listaClientes[conta]);
+            } else if (valor <= listaClientes[conta] + chequeEspecial){
+                //deduzir do saldo
+                listaClientes[conta] = listaClientes[conta] - valor;
+                //deduzir do cheque especial o valor faltante
+                chequeEspecial = chequeEspecial + listaClientes[conta]; //saldo está negativo
+                //zerar o saldo
+                listaClientes[conta] = listaClientes[conta] + (listaClientes[conta] * -1);
+                printf("Saque realizado com cheque especial!\n");
+                printf("Saldo: %.2f\n", listaClientes[conta]);
+                printf("Cheque especial: %.2f\n", chequeEspecial);
+            } else {
+                printf("Sem saldo suficiente.\n");
+                return 0;
+            }
+        } else {
+            // sair do sistema
+            printf("Encerrando...");
+            return 0;
+        }
+    }
+}</code></pre>
+        </div>
 
         <div id="posts-container" class="posts-section">
         </div>
 
-        <div id="links" class="links">
-        </div>
     </div>
 
     <script>
+        // highlight config
+        hljs.configure({cssSelector: 'code'});
+        hljs.highlightAll();
+
+
+        // escapes html tag
+        replaceAll(['code1']);
+
         // carregando json local
         const data = fetch('./data.json').then(async data => {
             data = await data.json();
             console.log(data)
             fillInfo(data);
-            createLinkCards(data.links);
-            createPost(data.posts)
+            createLinkCards(data.links)
+            postfill(data.posts, 1);
         });
 
-        // Função para formatar a data
-        function formatDate(dateString) {
-            const options = { day: 'numeric', month: 'short', year: 'numeric' };
-            return new Date(dateString).toLocaleDateString('pt-BR', options);
-        }
-
-
-
-        // Função para criar os cards de posts
-        function createPost(listaPosts) {
-            const searchParams = new URLSearchParams(window.location.search);
-            postId = searchParams.get('postId');
-            
-            let postsContainer = document.getElementById('posts-container');
-            let elements = '';
-            
+        function postfill(listaPosts, postId)
+        {
             let post;
             for(let i = 0; i < listaPosts.length; i++)
             {
@@ -202,23 +274,18 @@
                     break;
                 }
             }
+            document.getElementById('postTitle').innerHTML = post.title;
+            document.getElementById('postSubtitle').innerHTML = post.subtitle;
+        }
 
-            elements += `<div class="post-title">${post.title}</div>`;
-            elements += `<div class="post-subtitle">${post.subtitle}</div>`;
-
-
-
-            for(let i = 0; i < post.content.length; i++)
-            {
-                elements += post.content[i];
-            }
-
-            elements += `<div class="post-date">${formatDate(post.date)}</div>`;
-            postsContainer.innerHTML = elements;
+        // Função para formatar a data
+        function formatDate(dateString) {
+            const options = { day: 'numeric', month: 'short', year: 'numeric' };
+            return new Date(dateString).toLocaleDateString('pt-BR', options);
         }
 
         function createLinkCards(links) {
-            const linksContainer = document.getElementById('links');
+            const linksContainer = document.getElementById('linksContainer');
             links.forEach(link => {
                 const linkElement = document.createElement('a');
                 linkElement.className = 'link';
@@ -231,6 +298,29 @@
         function fillInfo(data){
             document.getElementById('nome').innerHTML = data.nome;
             document.getElementById('descricao').innerHTML = data.descricao;
+        }
+
+        function replaceAll(idArray){
+            const fromTo = [
+                {from: '</windows.h>', to: ''},
+                {from: '</stdio.h>', to: ''},
+                {from: '<', to: '&lt;'},
+                {from: '>', to: '&gt;'},
+            ];
+
+            for(let i=0; i < idArray.length; i++)
+            {
+                let searchId = idArray[i];
+
+                let code = document.getElementById(searchId).innerHTML;
+                console.log('code',code)
+
+                for(let j=0; j < fromTo.length; j++)
+                {
+                    code = code.replaceAll(fromTo[j].from, fromTo[j].to);
+                }
+                document.getElementById(searchId).innerHTML = code;
+            }
         }
     </script>
 </body>

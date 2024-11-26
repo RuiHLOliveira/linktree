@@ -164,7 +164,7 @@
         <div id="posts-container" class="posts-section">
         </div>
 
-        <div id="links" class="links">
+        <div id="linksContainer" class="links">
         </div>
     </div>
 
@@ -192,7 +192,7 @@
             elements += '<h2>Últimos Posts</h2><br>';
             
             listaPosts.forEach(post => {
-                post.link = `./post.html?postId=${post.id}`
+                post.link = `./${post.link}.html`
                 elements += `<a href="${post.link}">`;
                 elements += `<div class='post'>`;
                 elements += `<div class="post-title">${post.title}</div>`;
@@ -206,7 +206,7 @@
         }
 
         function createLinkCards(links) {
-            const linksContainer = document.getElementById('links');
+            const linksContainer = document.getElementById('linksContainer');
             links.forEach(link => {
                 const linkElement = document.createElement('a');
                 linkElement.className = 'link';
