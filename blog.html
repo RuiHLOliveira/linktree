@@ -116,7 +116,12 @@
             color: #e0e0e0;
         }
 
-        .post-excerpt {
+        .post-subtitle {
+            color: #cccccc;
+            font-size: 0.9em;
+        }
+
+        .post-content {
             color: #cccccc;
             font-size: 0.9em;
         }
@@ -187,13 +192,12 @@
             elements += '<h2>Últimos Posts</h2><br>';
             
             listaPosts.forEach(post => {
+                post.link = `./post.html?postId=${post.id}`
                 elements += `<a href="${post.link}">`;
                 elements += `<div class='post'>`;
-                    elements += `
-                    <div class="post-title">${post.title}</div>
-                    <div class="post-excerpt">${post.excerpt}</div>
-                    <div class="post-date">${formatDate(post.date)}</div>
-                `;
+                elements += `<div class="post-title">${post.title}</div>`;
+                elements += `<div class="post-subtitle">${post.subtitle}</div>`;
+                elements += `<div class="post-date">${formatDate(post.date)}</div>`;
                 elements += `</div>`;
                 elements += `</a>`;
             });
