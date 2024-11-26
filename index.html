@@ -13,6 +13,10 @@
             box-sizing: border-box;
         }
 
+        a {
+            text-decoration: none;
+        }
+        
         body {
             font-family: Arial, sans-serif;
             background-color: #1a1a1a;
@@ -204,26 +208,44 @@
 
         // Função para criar os cards de posts
         function createPostCards(listaPosts) {
-            const limite = 3;
-            const postsContainer = document.getElementById('posts-container');
-            const title = document.createElement('h2');
-            title.innerText = 'Últimos Posts';
-            postsContainer.appendChild(title);
-            for (let i = 0; i < limite; i++)
-            {
-                const post = listaPosts[i];
-                const postCard = document.createElement('div');
-                postCard.className = 'post';
-                postCard.innerHTML = `
-                    <div class="post-title">${post.title}</div>
-                    <div class="post-subtitle">${post.subtitle}</div>
-                    <div class="post-date">${formatDate(post.date)}</div>
-                `;
-                postsContainer.appendChild(postCard);
-            }
-            const todosPosts = document.createElement('div');
-            todosPosts.innerHTML = `<a href="/blog.html" class="view-all-posts">Ver Todos os Posts</a>`;
-            postsContainer.appendChild(todosPosts);
+            // const limite = 3;
+            // const postsContainer = document.getElementById('posts-container');
+            // const title = document.createElement('h2');
+            // title.innerText = 'Últimos Posts';
+            // postsContainer.appendChild(title);
+            // for (let i = 0; i < limite; i++)
+            // {
+            //     const post = listaPosts[i];
+            //     const postCard = document.createElement('div');
+            //     postCard.className = 'post';
+            //     postCard.innerHTML = `
+            //         <div class="post-title">${post.title}</div>
+            //         <div class="post-subtitle">${post.subtitle}</div>
+            //         <div class="post-date">${formatDate(post.date)}</div>
+            //     `;
+            //     postsContainer.appendChild(postCard);
+            // }
+            // const todosPosts = document.createElement('div');
+            // todosPosts.innerHTML = `<a href="/blog.html" class="view-all-posts">Ver Todos os Posts</a>`;
+            // postsContainer.appendChild(todosPosts);
+
+            
+            let postsContainer = document.getElementById('posts-container');
+            let elements = '';
+            elements += '<h2>Últimos Posts</h2><br>';
+            
+            listaPosts.forEach(post => {
+                post.link = `./${post.link}.html`
+                elements += `<a href="${post.link}">`;
+                elements += `<div class='post'>`;
+                elements += `<div class="post-title">${post.title}</div>`;
+                elements += `<div class="post-subtitle">${post.subtitle}</div>`;
+                elements += `<div class="post-date">${formatDate(post.date)}</div>`;
+                elements += `</div>`;
+                elements += `</a>`;
+            });
+            
+            postsContainer.innerHTML = elements;
         }
 
         function createLinkCards(links) {

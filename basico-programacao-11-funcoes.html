@@ -170,75 +170,101 @@
             <br>
 <pre><code class="language-c" id="code1">
 #include <stdio.h>
-#include <Windows.h>
-int main (void)
+
+int soma (int valorA, int valorB)
 {
-    float valor;
-    int conta;
-    float saldo = 20;
-    float chequeEspecial = 100;
-    int opcao = 1;
-    int i;
-    float listaClientes[10];
-    listaClientes[0] = 100;
-    listaClientes[1] = 500;
-    listaClientes[2] = 1000;
-    listaClientes[3] = 450;
-    listaClientes[4] = 600;
+    int somatorio;
+    somatorio = valorA + valorB;
+    return somatorio;
+}
 
-    while (opcao > 0)
+int subtracao (int valorA, int valorB)
+{
+    int resultado;
+    resultado = valorA - valorB;
+    return resultado;
+}
+
+int multiplicacao (int valorA, int valorB)
+{
+    int resultado;
+    resultado = valorA * valorB;
+    return resultado;
+}
+
+float divisao (int valorA, int valorB)
+{
+    float resultado;
+    resultado = valorA / valorB;
+    return resultado;
+}
+
+float porcentagem (int total, int porcentagemDesejada)
+{
+    float resultado;
+    resultado = total / 100 * porcentagemDesejada;
+    return resultado;
+}
+
+int main (void) {
+    int numeroA;
+    int numeroB;
+    int resultado;
+    int operacao = 1;
+    printf("**** CALCULADORA ****");
+
+    while(operacao != 0)
     {
-        // menu
-        printf("\n\n***** CAIXA ELETRONICO *****");
-        printf("\n* Escolha uma opcao:");
-        printf("\n* 1-Saque");
-        printf("\n* 2-Deposito");
-        printf("\n* 0-Desligar");
-        printf("\n* Digite => ");
-        scanf("%d", &opcao);
+        printf("\n\nOperacao:\n");
+        printf("1-Soma\n2-Subtracao\n3-Multiplicacao\n4-Divisao\n5-Porcentagem\n0-Sair\nDigite: ");
+        scanf("%d", &operacao);
 
-        if(opcao > 2){
-            printf("\nOpção não suportada!");
-        } else if(opcao == 2) {
-            printf("\nEstamos trabalhando na funcionalidade de deposito, aguarde!");
-        } else if(opcao == 1) {
-            //funcionalidade de saque
-            printf("\nInforme sua conta (1-10)...\n");
-            scanf("%d", &conta);
-            printf("\nSaldo atual da sua conta:");
-            printf("%.2f\n", listaClientes[conta]);
-            printf("\nInforme o valor do saque...\n");
-            scanf("%f", &valor);
-            printf("Processando...\n");
-            for ( i = 5; i >= 1 ; i--) {
-                printf("%d...", i);
-                sleep(1);
-            }
-            if (valor <= listaClientes[conta]) {
-                listaClientes[conta] = listaClientes[conta] - valor;
-                printf("Saque realizado.\n");
-                printf("Saldo: %.2f\n", listaClientes[conta]);
-            } else if (valor <= listaClientes[conta] + chequeEspecial){
-                //deduzir do saldo
-                listaClientes[conta] = listaClientes[conta] - valor;
-                //deduzir do cheque especial o valor faltante
-                chequeEspecial = chequeEspecial + listaClientes[conta]; //saldo está negativo
-                //zerar o saldo
-                listaClientes[conta] = listaClientes[conta] + (listaClientes[conta] * -1);
-                printf("Saque realizado com cheque especial!\n");
-                printf("Saldo: %.2f\n", listaClientes[conta]);
-                printf("Cheque especial: %.2f\n", chequeEspecial);
-            } else {
-                printf("Sem saldo suficiente.\n");
-                return 0;
-            }
-        } else {
-            // sair do sistema
-            printf("Encerrando...");
-            return 0;
+        if(operacao == 1) {
+            printf("Digite o numero A: ");
+            scanf("%d", &numeroA);
+            printf("\nDigite o numero B: ");
+            scanf("%d", &numeroB);
+            resultado = soma(numeroA, numeroB);
+            printf("\nO resultado da soma foi: ");
+            printf("%d", resultado);
+        } else if (operacao == 2) {
+            printf("Digite o numero A: ");
+            scanf("%d", &numeroA);
+            printf("\nDigite o numero B: ");
+            scanf("%d", &numeroB);
+            resultado = subtracao(numeroA, numeroB);
+            printf("\nO resultado da subtracao foi: ");
+            printf("%d", resultado);
+        } else if (operacao == 3) {
+            printf("Digite o numero A: ");
+            scanf("%d", &numeroA);
+            printf("\nDigite o numero B: ");
+            scanf("%d", &numeroB);
+            resultado = multiplicacao(numeroA, numeroB);
+            printf("\nO resultado da multiplicacao foi: ");
+            printf("%d", resultado);
+        } else if (operacao == 4) {
+            printf("Digite o numero A: ");
+            scanf("%d", &numeroA);
+            printf("\nDigite o numero B: ");
+            scanf("%d", &numeroB);
+            resultado = divisao(numeroA, numeroB);
+            printf("\nO resultado da divisao foi: ");
+            printf("%d", resultado);
+        } else if (operacao == 5) {
+            printf("Digite o numero que significa 100 por cento: ");
+            scanf("%d", &numeroA);
+            printf("\nDigite a porcentagem desejada: ");
+            scanf("%d", &numeroB);
+            resultado = porcentagem(numeroA, numeroB);
+            printf("\nO resultado da porcentagem foi: ");
+            printf("%d", resultado);
         }
     }
-}</code></pre>
+
+    return 0;
+}
+</code></pre>
         </div>
 
         <div id="posts-container" class="posts-section">
@@ -261,15 +287,24 @@ int main (void)
             console.log(data)
             fillInfo(data);
             createLinkCards(data.links)
-            postfill(data.posts, 1);
+            let postName = getPostName();
+            postfill(data.posts, postName);
         });
 
-        function postfill(listaPosts, postId)
+        function getPostName(){
+            let currentUrl = window.location.href;
+            currentUrl = currentUrl.split('/');
+            let postname = currentUrl[currentUrl.length-1];
+            postname = postname.replace('.html','');
+            return postname;
+        }
+
+        function postfill(listaPosts, postName)
         {
             let post;
             for(let i = 0; i < listaPosts.length; i++)
             {
-                if(listaPosts[i].id == postId){
+                if(listaPosts[i].link == postName){
                     post = listaPosts[i];
                     break;
                 }
