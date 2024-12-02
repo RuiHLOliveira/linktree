@@ -17,6 +17,12 @@
     ],
     "posts": [
         {
+            "link": "basico-programacao-13-modularizando-caixa-eletronico-parte-2",
+            "title": "Básico da Programação 13 Modularizando o Caixa Eletrônico Parte 2",
+            "subtitle": "Resposta do Desafio",
+            "date": "2024-12-02"
+        },
+        {
             "link": "basico-programacao-12-modularizando-caixa-eletronico",
             "title": "Básico da Programação 12 Modularizando o Caixa Eletrônico",
             "subtitle": "Resposta do Desafio",
