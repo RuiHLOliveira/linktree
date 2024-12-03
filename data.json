@@ -17,6 +17,12 @@
     ],
     "posts": [
         {
+            "link": "basico-programacao-14-passagem-parametro-referencia",
+            "title": "Básico da Programação 14 Passagem de Parâmetro por Referência",
+            "subtitle": "Resposta do Desafio",
+            "date": "2024-12-04"
+        },
+        {
             "link": "basico-programacao-13-modularizando-caixa-eletronico-parte-2",
             "title": "Básico da Programação 13 Modularizando o Caixa Eletrônico Parte 2",
             "subtitle": "Resposta do Desafio",
