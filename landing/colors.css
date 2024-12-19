@@ -1,0 +1,18 @@
+:root {
+
+    /* azul */
+    --bg-rodape1: #0a2241;
+    --bg-btnMentorado: #274b80;
+    --bg-btnMentoradoHover: rgb(52, 94, 156);
+    --color-title1: #4d97c9;
+    --bg-ball: #2b4586;
+
+    /* verde */
+    --bg-rodape1: #0a412f;
+    --bg-btnMentorado: #278062;
+    --bg-btnMentoradoHover: #268867; 
+    --color-title1: #67af5c;
+    --bg-ball: #1f814b;
+    --bg-ball-pricing: #ac8329;
+    --bg-ball-pricing: #1f814b;
+}

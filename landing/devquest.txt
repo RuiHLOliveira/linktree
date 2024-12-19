@@ -1,0 +1,268 @@
+
+        *************
+        Por que o DevQuest é diferente de outros cursos para iniciantes
+
+        Acesso de 1 ano ao curso e atualizações
+        Acesso de 1 ano as monitorias de programação e de marketing pessoal
+        Suporte ao aluno em menos de 24h (úteis) na comunidade do discord
+        Correções individuais de desafios
+        Maratona de empregabilidade
+        Liberação de novos workshops, aulões e desafios de programação e
+        carreira para os alunos
+        Exercícios, quests e quizzes para praticar a programação
+        com projetos do mundo real
+
+        *************
+        Nunca viu um código na vida?
+        Te ensinamos tudo! Desde como baixar e instalar as ferramentas,
+        principais linguagens de programação fullstack, o que elas fazem,
+        etc, para AÍ SIM começar a programar.
+
+        Já estuda programação?
+        O curso vai muito além do básico, te ensinamos conceitos avançados
+        de programação fullstack, como React.js, Redux, Context API,
+        TypeScript e Node, além disso te preparamos para o mercado de trabalho.
+
+        E o melhor o DevQuest é assíncrono, ou seja, você não tem a
+        obrigação de seguir um ritmo imposto por nós, você pode fazer
+        o curso no seu tempo sem pressão.
+
+        *************
+
+        Como Funciona a metodologia do DevQuest
+        3 Pilares
+
+        Planejamento
+        Não sabe nem por onde começar a criar um cronograma
+        de estudos? Não se preocupe, nesse pilar nós te damos
+        um cronograma pronto para seguir, e planejamos a sua
+        carreira junto com você, desde o absoluto zero.
+
+        Prática
+        Nesse pilar começamos a estudar as principais linguagens
+        e conceitos da área de desenvolvimento web Full Stack,
+        e também já vamos começar a praticar com exercícios,
+        quizzes e desafios para que você realmente sinta que
+        está aprendendo e evoluindo na programação.
+
+        Marketing Pessoal
+        Saber programar é só 50% do caminho, os outros 50% é
+        saber se vender. Nesse pilar vamos te mostrar como
+        criar seu currículo, portfólio, LinkedIn e GitHub
+        de forma a impressionar os recrutadores e estar sempre
+        nos top 10% de qualquer vaga de programação.
+
+
+        *************
+
+
+        Pra quem é?
+
+        Para quem não sabe absolutamente nada de programação,
+        mas quer aprender e conseguir o primeiro emprego o quanto antes.
+
+        Para quem já começou a estudar programação mas está
+        confuso e sozinho, sem um caminho pra seguir e sem suporte algum.
+
+        Para quem já está um pouco mais avançado mas está com
+        dificuldade de conseguir o primeiro emprego na área.
+
+        Para quem já está em outro emprego e quer migrar para a
+        área de programação de uma forma mais rápida.
+
+        
+        *************
+        
+        
+        Depoimentos
+
+        Veja os depoimentos dos nosso alunos que conseguiram
+        emprego em tempo recorde graças ao DevQuest
+
+
+        *************
+        
+        Módulos
+
+        O que você vai aprender
+
+        introdução
+        planejamento
+        terminal
+        vscode
+        html5 basico
+        css3 basico
+        git github
+        clean code
+        htm intermediario
+        css intermediario
+        html avançado
+        css avançado 1, 2flex, 3grid
+        projeto landing page flex e grid
+        reforço css3
+        marketing pessoal curriculo de sucesso
+        marketing pessoal linkeding de sucesso
+        js básico intermediario e avançado
+        testes jest
+        projeto mundo real fetch e github
+        react basico
+        react avançado
+        context api
+        Redux
+        TypeScript
+        intro backend
+        sql
+        http
+        Node
+        express
+        deploy
+        projeto node e postgresql
+        conclusão
+
+        *************
+        
+        Suporte, Networking e Comunidade
+
+        A cereja do bolo do nosso treinamento!
+        Conheça as convocações da Guilda
+        O QUE SÃO AS CGs?
+
+        Uma das maiores formas de suporte do DevQuest!
+
+        As Convocações da Guilda (ou CGs para os íntimos) são monitorias semanais onde os monitores respondem todas as dúvidas dos alunos ao vivo, e aprofundam os conteúdos caso você não tenha entendido.
+        COMO ELAS ACONTECEM?
+
+        Uma chamada com um monitor e os seus colegas. As perguntas dos colegas podem ser as suas também, então é bem legal participar. Ter essa conexão tão próxima com devs mais experientes é algo que com certeza vai te trazer não apenas conhecimentos de programação, mas de mindset e de mercado.
+        QUANDO?
+
+        São 2 CGs semanais, mais 2 CGs mensais exclusivas de Marketing Pessoal!
+
+            SEGUNDA – CG de HTML e CSS
+            TERÇA– CG de JavaScript, React e Backend
+            MARKETING PESSOAL – Duas vezes no mês.
+
+        VOU TER ACESSO POR QUANTO TEMPO?
+
+        Você terá acesso as CGs pelo período de 1 ano a partir da data da sua compra! Esse tempo é mais do que suficiente pra finalizar o curso e conseguir o primeiro emprego.
+
+
+        *************
+
+        Outras vantagens de participar da nossa comunidade exclusiva de alunos!
+
+        Dúvidas respondidas em menos de 24 horas (nada de 48 horas aqui). Sabemos que o iniciante precisa de mais atenção e de respostas rápidas para destravar.
+    
+        Proximidade muito maior com os professores.
+    
+        Networking entre os alunos (que ajuda até mesmo a conseguir um emprego por indicação).
+    
+        Ter um lugar seguro para perguntar e conversar com outras pessoas que também estão iniciando na programação
+
+        *************
+
+            
+        Acesso ao desafio MPE
+
+        Meu primeiro emprego web
+
+        No DevQuest temos eventos exclusivos para alunos como o Desafio “Meu primeiro emprego”.
+
+        O que é o Desafio MPE ?
+
+        No desafio MPE fazemos uma imersão com acompanhamento de perto em busca, aplicação e participação de processos seletivos para vagas de programação.
+        Os 3 primeiros participantes inscritos a conseguirem uma vaga na área ganham presentes!
+
+
+        *************
+
+        Acesso ao desafio MPS
+
+        Meu primeiro site
+        
+        No DevQuest temos eventos exclusivos para alunos como o Desafio “Meu primeiro site”.
+        
+        O que é o Desafio MPS?
+        
+        No desafio MPS você tem uma oportunidade única para você colocar em prática tudo o que aprendeu e dar vida ao seu primeiro site! Acompanhamos você de perto em cada etapa do processo, desde o planejamento até a implementação final.
+        
+        Nosso objetivo é proporcionar uma experiência prática intensa, preparando você para desafios reais do mercado de trabalho em desenvolvimento web.
+        
+        Os 3 melhores sites concorrem a prêmios no final da jornada! 
+        
+         
+        
+        *************
+
+        Bônus
+
+        Workshops
+    
+        Aulões técnicos
+    
+        Acesso aos projetos da Semana do Zero ao Programador Contratado passadas
+
+        *************
+
+        Garantias Únicas
+
+        Essas garantias você não vai ver em nenhum outro curso.
+
+        Nada de garantia de 7 dias que já é obrigatório por lei. Acreditamos tanto no nosso produto que te damos 15 DIAS DE GARANTIA, e se dentro desse período você achar que o curso não é para você, basta entra em contato pelo e-mail suportedevquest@gmail.com ou com a nossa equipe pelo privado na comunidade de alunos e solicitar o reembolso.
+        GARANTIA OU VAI OU RACHA
+
+        Se mesmo depois de fazer todo o curso, participar de todas as mentorias em grupo, fazer o seu portfólio, LinkedIn, currículo e GitHub da forma que a gente ensina, e ter feito todos os desafios e enviado seu currículo para as vagas, você ainda assim não conseguir nenhum emprego no período de 7 meses de aquisição do curso, a gente vai te dar uma mentoria gratuita onde vamos repassar tudo que você colocou em prática, para entender porque não deu certo e te ajudar a conseguir o seu emprego na área de programação.
+
+        *************
+        
+        Professores
+
+        Olá, nós somos o Ricardo e o Roberto Dias.
+
+        Trabalhamos com desenvolvimento de software há mais de 12 anos, e também já fomos recrutadores nas empresas em que trabalhamos. Atualmente já ensinamos mais de 6000 alunos a programar.
+
+        E nós temos uma missão com o DevQuest:
+
+        Fazer com que você consiga perceber a oportunidade incrível que é trabalhar na área de tecnologia, e que existe um atalho que pode ser aplicado por qualquer pessoa para entrar na área em menos de um ano, mesmo sem ter experiência alguma com programação.
+
+
+        *************
+
+        FAQ
+        Não sei absolutamente nada de programação, o DevQuest tambem é pra mim?
+
+        Sim, nossa didática é focada no iniciante, então mesmo que você não saiba nada de programação vai conseguir aprender sem problemas.
+        Preciso saber lógica de programação?
+
+        A lógica de programação é importante, mas começando pelo frontend você primeiro começa vendo linguagens que não envolvem lógica, facilitando o aprendizado.
+        Preciso ser bom em matemática?
+
+        Não, nós nunca fomos bons em matemática e somos programadores seniores, você só precisa saber a matemática básica.
+        Preciso fazer faculdade para entrar na área?
+
+        Não, na área de tecnologia muitas empresas não pedem mais o diploma, o que mais importa é você saber demonstrar que sabe as tecnologias que as empresas mais precisam, e te mostramos como fazer isso no treinamento.
+        Sou muito velho ou muito novo para programar?
+
+        Na área de tecnologia a idade não importa, o que importa é que você consiga demonstrar que sabe as tecnologias que as empresas mais precisam.
+        Já sei um pouco de programação o curso é pra mim?
+
+        Sim! No DevQuest vamos muito além do básico, ensinamos as tecnologias de ponta do mercado web full stack. E ainda te ajudamos a conseguir o seu primeiro emprego na área.
+        Quantas horas estudar por dia para atingir esse objetivo de entrar na área?
+
+        Se você tem no mínimo 2 horas por dia para estudar já vai conseguir avançar muito rápido no DevQuest.
+        Como funcionam as monitorias em grupo?
+
+        As monitorias são em grupo e acontecem todas as segundas, terças. Duram em torno de 1 hora e respondemos as dúvidas referentes aos módulos do nosso treinamento. A partir da data da compra, você tem acesso de 1 ano a essas monitorias ao vivo.
+        Preciso ter um computador bom para programar?
+
+        Não, como vamos ensinar desenvolvimento web o computador não precisa ser tão potente.
+        O curso tem certificado?
+
+        Sim, o curso tem certificado de conclusão.
+
+        *************
+
+        *************
+
+        *************
+        
+        *************
