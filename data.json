@@ -7,12 +7,16 @@
     "descricao": "Rui Leite | Engenheiro de Software",
     "links": [
         {
-            "nome": "Instagram",
-            "link": "https://www.instagram.com/dev.rui/"
+            "nome": "<h2>Canal do Whatsapp</h2>Siga para não perder nada",
+            "link": "https://whatsapp.com/channel/0029Vb2hVkXEKyZ9xaEaRK2r"
         },
         {
             "nome": "Blog",
             "link": "/blog.html"
+        },
+        {
+            "nome": "Instagram",
+            "link": "https://www.instagram.com/dev.rui/"
         }
     ],
     "posts": [
